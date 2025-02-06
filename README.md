@@ -9,7 +9,7 @@ Após a criação do projeto podemos excluir alguns arquivos que vem como modelo
 
 - Criar uma nova pasta chamada Data
 
-  
+ <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/01_CriarPastaData.png"/>
 
 
 
