@@ -24,5 +24,6 @@ Após a criação do projeto podemos excluir alguns arquivos que vem como modelo
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/03_Pacote_NuGet.png"/>
 
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/04_Pacote_Nuget_2.png"/>
 
 - 53:49
