@@ -78,4 +78,7 @@ O pacote Microsoft.EntityFrameworkCore.Design é uma extensão do Entity Framewo
    - Gerar código a partir de um banco existente
 
 - Instalar o EntityFrameworkCore.Tools
+
+ <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/08_EntityCoreTools.png"/>
+ 
 - 53:49
