@@ -11,6 +11,11 @@ Após a criação do projeto podemos excluir alguns arquivos que vem como modelo
 
  <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/01_CriarPastaData.png"/>
 
+- Criar uma Classe dentro da pasta
+
+ <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/02_CriarClasse.png"/>
+
+ 
 
 
 - 53:49
