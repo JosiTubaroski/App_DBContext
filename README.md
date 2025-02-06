@@ -26,4 +26,12 @@ Após a criação do projeto podemos excluir alguns arquivos que vem como modelo
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/04_Pacote_Nuget_2.png"/>
 
+- Instalar o EntityFrameworkCore
+
+ <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/05_EntityFrameworkCore.png"/>
+
+ - Instalar o EntityFrameworkCore.SqlServer
+
+ <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/06_EntityFrameworkSQL.png"/>
+
 - 53:49
