@@ -7,6 +7,9 @@ Após a criação do projeto podemos excluir alguns arquivos que vem como modelo
 
 ### Primeiro Passo: Criar a conexão com o banco de dados para persistir as informações com o Banco de Dados que nesse caso será o SQL Server. 
 
+- Criar uma nova pasta chamada Data
+
+  
 
 
 
