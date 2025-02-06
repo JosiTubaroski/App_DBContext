@@ -20,7 +20,7 @@ Após a criação do projeto podemos excluir alguns arquivos que vem como modelo
   Essa classe é responsavel pelo "meio de campo" entre o nosso código c# e o Banco de Dados.
   Vamos nos comunicar com o banco de dados através desse contexto.
 
-##### Instalar as dependencias do Projeto
+##### Instalar as dependencias do Projeto, através do NuGet
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/03_Pacote_NuGet.png"/>
 
