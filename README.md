@@ -238,7 +238,7 @@ Várias linguagens e frameworks adotam essa abordagem, principalmente aquelas qu
 
 ### Criando as Models da Aplicação.
 
-#### AutorModel.cs
+## 1) AutorModel.cs
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/16_AutorModels.png"/>
 
@@ -287,6 +287,11 @@ Várias linguagens e frameworks adotam essa abordagem, principalmente aquelas qu
 <p>✅ Livros é uma lista que armazena os livros escritos por esse autor.</p>
 <p>✅ [JsonIgnore] evita que a lista de livros apareça na serialização JSON.</p>
 <p>✅ Isso é útil para evitar circularidade e melhorar a performance das respostas da API.</p>
+
+## 2) LivroModel.cs
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/24_LivroModels.png"/>
+
 
 
 
