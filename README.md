@@ -90,5 +90,34 @@ O pacote Microsoft.EntityFrameworkCore.Tools adiciona suporte a comandos do Enti
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Code First 
+
+O modelo Code First é uma abordagem de desenvolvimento em que o código-fonte é a base para a criação e manutenção do banco de dados. Ou seja, primeiro você escreve as classes e modelos no código e, a partir deles, o esquema do banco de dados é gerado automaticamente.
+
+### Como funciona o Code First?
+
+#### 1. Definição do modelo
+
+- O desenvolvedor cria classes que representam as entidades do banco de dados (como tabelas).
+
+#### 2. Mapeamento para o banco
+
+- Um ORM (Object-Relational Mapping) traduz essas classes para tabelas no banco de dados.
+
+#### 3. Migrações
+
+- Quando há mudanças no modelo, o banco é atualizado por meio de migrações, sem a necessidade de modificar o esquema diretamente.
+
+# Quais linguagens utilizam Code First?
+
+Várias linguagens e frameworks adotam essa abordagem, principalmente aquelas que trabalham com ORMs. Aqui estão algumas das principais:
+
+#### 1. C# + Entity Framework
+
+- No Entity Framework Core (EF Core), a abordagem Code First é muito popular.
+- O desenvolvedor cria classes em C#, e o EF Core gera o banco com base nelas.
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/09_Code_First.png"/>
+
+- A partir desse código, o EF Core cria a tabela Produto no banco de dados.
  
 - 53:49
