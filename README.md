@@ -167,6 +167,44 @@ No Entity Framework Core, o contexto de banco é uma classe que herda de DbConte
 2. Definimos um construtor que recebe as opções do contexto.
 3. Criamos propriedades DbSet<T>, que representam tabelas no banco de dados.
 
+# O que são construtores de classes no ASP.NET?
+
+No <b>ASP.NET Core</b>, um construtor é um método especial que é executado automaticamente quando um objeto de uma classe é criado. Ele serve para <b>inicializar propriedades e configurar dependências</b> da classe.
+
+Construtores são usados tanto em Controllers, Services, Contextos de Banco de Dados, e outras partes da aplicação.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 📌 O que são Models no ASP.NET Core?
+
+No ASP.NET Core, as Models(ou Modelos) são classes que representam dados e a lógica de negócio da aplicação. Elas são responsáveis por definir como os dados serão estruturados, armazenados e manipulados.
+
+As <b>Models</b> fazem parte do Padrão MVC(Model-View-Controller) e são usadas tanto em APIs quanto em aplicações web.
+
+#📌 Para que servem as Models?
+
+- ✔ Definir a estrutura dos dados que serão manipulados na aplicação.
+- ✔ Interagir com o banco de dados quando usadas com Entity Framework Core (EF Core).
+- ✔ Validar os dados antes que sejam processados.
+- ✔ Mapear objetos para JSON em APIs REST.
+
+# 📌 Resumo
+
+✅ Models são classes que representam dados e regras de negócio.
+✅ Elas são usadas pelo Entity Framework Core para mapear tabelas do banco.
+✅ As Models são validadas usando Data Annotations ([Required], [MaxLength], etc.).
+✅ Controllers usam Models para manipular os dados e criar APIs.
+
+# 📌 O que é o padrão MVC (Model-View-Controller)?
+
+O MVC (Model-View-Controller) é um padrão de arquitetura de software usado para organizar a estrutura de aplicações web. Ele separa a aplicação em <b>três camadas principais</b>:
+
+1️⃣ <b>Model (Modelo)</b> - Gerencia os dados e a lógica de négocios
+2️⃣ <b>View (Visão)</b> - Responsável pela interface com usuário
+3️⃣ Controller (Controlador) – Atua como intermediário entre Model e View.
+
+O ASP.NET Core MVC usa esse padrão para criar aplicações web e APIs organizadas e escaláveis.
+
 # Code First 
 
 O modelo Code First é uma abordagem de desenvolvimento em que o código-fonte é a base para a criação e manutenção do banco de dados. Ou seja, primeiro você escreve as classes e modelos no código e, a partir deles, o esquema do banco de dados é gerado automaticamente.
