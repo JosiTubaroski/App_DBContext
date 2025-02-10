@@ -116,8 +116,56 @@ O AppDbContext é responsável por gerenciar as operações com o banco de dados
 - public class AppDbContex : DbContext → Cria a classe AppDbContex, que herda de DbContext (classe base do EF Core).
 
   - Essa classe atua como um intermediário entre aplicação e banco de dados.
- 
- 
+
+ 3️⃣ <b> Construtor da Classe </b>
+
+ <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/13_ConstrutorClasse.png"/>
+
+ - public AppDbContex(DbContextOptions<AppDbContex> options)
+
+   - O construtor recebe um objeto DbContextOptions<AppDbContex>, que contém configurações do banco de dados, como o provedor (SQL Server, SQLite, etc.) e a string de conexão.
+
+ - : base(options)
+
+   - Passa as opções para o construtor da classe base (DbContext), garantindo que o EF Core use essas configurações corretamente.
+
+ 4️⃣ <b> DbSets (Tabelas do Banco) </b>
+
+ <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/14_DbSet.png"/>
+
+ - DbSet<AutorModel> Autores → Representa a tabela Autores no banco de dados.
+ - DbSet<LivroModel> Livros → Representa a tabela Livros no banco de dados.
+ - O DbSet<T> permite executar operações CRUD (Create, Read, Update, Delete) no banco.
+
+## 📌 Resumo
+
+- ✔ AppDbContex é o intermediário entre a aplicação e o banco de dados.
+- ✔ Ele usa DbSet<T> para representar tabelas no banco.
+- ✔ O construtor recebe opções de configuração (como o tipo de banco e string de conexão).
+- ✔ Ele é registrado no DI e usado nos Controllers para acessar os dados.
+
+# O que é um contexto de banco de dados para uma aplicação ASP.NET?
+
+O <b>contexto de banco de dados</b> em uma aplicação <b>ASP.NET Core</b> utilizando <b>Entity Framework Core (EF Core)</b> é uma <b>classe que gerencia a conexão</b> entre a aplicação e o banco de dados.
+
+Essa classe é responsavel por:
+
+- ✔ Configurar a conexão com o banco de dados (ex.: SQL Server, MySQL, SQLite).
+- ✔ Definir quais tabelas a aplicação irá manipular (via DbSet<T>).
+- ✔ Executar operações CRUD (Create, Read, Update, Delete).
+- ✔ Aplicar migrações e mapear classes para tabelas no banco (ORM - Object Relational Mapping).
+
+# 📌 Como funciona um contexto de banco de dados?
+
+No Entity Framework Core, o contexto de banco é uma classe que herda de DbContext, que é a classe base para interação com o banco.
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/15_Heran%C3%A7a.png"/>
+
+📌 Explicação do código acima:
+
+1. Herdamos de DbContext → AppDbContext : DbContext.
+2. Definimos um construtor que recebe as opções do contexto.
+3. Criamos propriedades DbSet<T>, que representam tabelas no banco de dados.
 
 # Code First 
 
