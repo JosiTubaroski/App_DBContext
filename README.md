@@ -283,10 +283,10 @@ Várias linguagens e frameworks adotam essa abordagem, principalmente aquelas qu
 
 ### 📌 Conclusão
 
-✅ AutorModel representa um autor, com Id, Nome e Sobrenome.
-✅ Livros é uma lista que armazena os livros escritos por esse autor.
-✅ [JsonIgnore] evita que a lista de livros apareça na serialização JSON.
-✅ Isso é útil para evitar circularidade e melhorar a performance das respostas da API.
+<p>✅ AutorModel representa um autor, com Id, Nome e Sobrenome.</p>
+<p>✅ Livros é uma lista que armazena os livros escritos por esse autor.</p>
+<p>✅ [JsonIgnore] evita que a lista de livros apareça na serialização JSON.</p>
+<p>✅ Isso é útil para evitar circularidade e melhorar a performance das respostas da API.</p>
 
 
 
