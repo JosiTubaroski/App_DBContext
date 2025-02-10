@@ -93,6 +93,31 @@ Após a instalação das dependencias vamos retornar ao desenvolvimento da AppDb
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/10_AppDbContext.png"/>
 
+## 📌 O que esse código faz?
+
+Ele define um contexto de banco de dados para uma aplicação ASP.NET Core usando Entity Framework Core (Ef Core).
+
+O AppDbContext é responsável por gerenciar as operações com o banco de dados e mapear as classes AutorModel e LivroModel para tabelas no banco de dados.
+
+## 📌Detalhamento do código
+
+1️⃣ <b>Namespaces Importados</b>
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/11_BibliotecasCSharp.png"/>
+
+- using Microsoft.EntityFrameworkCore; → Importa a biblioteca Entity Framework Core, que permite trabalhar com bancos de dados usando código C#.
+- using WebAPI8_Video.Models; → Importa os modelos (AutorModel, LivroModel) que representam tabelas do banco de dados.
+
+2️⃣ <b>Definição da Classe AppDbContext</b>
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/12_Context_BancoDados.png"/>
+
+- namespace WebAPI8_Video.Data; → Define um espaço de nomes para organizar a estrutura da aplicação.
+- public class AppDbContex : DbContext → Cria a classe AppDbContex, que herda de DbContext (classe base do EF Core).
+
+  - Essa classe atua como um intermediário entre aplicação e banco de dados.
+ 
+ 
 
 # Code First 
 
