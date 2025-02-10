@@ -89,6 +89,11 @@ O pacote Microsoft.EntityFrameworkCore.Tools adiciona suporte a comandos do Enti
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Após a instalação das dependencias vamos retornar ao desenvolvimento da AppDbContext.cs
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/10_AppDbContext.png"/>
+
+
 # Code First 
 
 O modelo Code First é uma abordagem de desenvolvimento em que o código-fonte é a base para a criação e manutenção do banco de dados. Ou seja, primeiro você escreve as classes e modelos no código e, a partir deles, o esquema do banco de dados é gerado automaticamente.
@@ -119,5 +124,6 @@ Várias linguagens e frameworks adotam essa abordagem, principalmente aquelas qu
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/09_Code_First.png"/>
 
 - A partir desse código, o EF Core cria a tabela Produto no banco de dados.
+
  
 - 53:49
