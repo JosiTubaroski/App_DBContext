@@ -236,5 +236,59 @@ Várias linguagens e frameworks adotam essa abordagem, principalmente aquelas qu
 
 - A partir desse código, o EF Core cria a tabela Produto no banco de dados.
 
+### Criando as Models da Aplicação.
+
+#### AutorModel.cs
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/16_AutorModels.png"/>
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/17_AutorModelCodigo.png"/>
+
+# Detalhando o Código
+
+### 📌 1. Importação de Biblioteca
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/18_Importacao_Biblioteca.png"/>
+
+- ✔ System.Text.Json.Serialization → Essa biblioteca permite customizar a serialização JSON no .NET.
+- ✔ Ela é usada para ignorar, formatar ou modificar como os objetos são transformados em JSON.
+
+### 📌 2. Definição da Classe AutorModel
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/19_Models.png"/>
+
+- ✔ namespace WebAPI8_Video.Models → Define o espaço de nomes onde essa classe pertence.
+- ✔ Ele agrupa classes relacionadas (neste caso, Modelos da aplicação).
+
+### 📌 3. Declaração da Classe AutorModel
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/20_ClasseModels.png"/>
+
+- ✔ Define a classe AutorModel, que representa um autor dentro do sistema.
+- ✔ Essa classe será usada para armazenar e manipular informações de autores no banco de dados.
+
+### 📌 4. Propriedades da Classe
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/21_PropriedadeClasseAutor1.png"/>
+
+- ✔ Id → Identificador único do autor (chave primária no banco de dados).
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/22_Propriedade_2.png"/>
+
+- ✔ Nome → Nome do autor (ex: "Machado").
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/23_Propriedade_3.png"/>
+
+- ✔ Sobrenome → Sobrenome do autor (ex: "de Assis").
+
+### 📌 Conclusão
+
+✅ AutorModel representa um autor, com Id, Nome e Sobrenome.
+✅ Livros é uma lista que armazena os livros escritos por esse autor.
+✅ [JsonIgnore] evita que a lista de livros apareça na serialização JSON.
+✅ Isso é útil para evitar circularidade e melhorar a performance das respostas da API.
+
+
+
  
 - 53:49
