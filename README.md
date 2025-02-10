@@ -84,5 +84,11 @@ O pacote Microsoft.EntityFrameworkCore.Design é uma extensão do Entity Framewo
 # Qual a função do EntityFrameworkCore.Tools?
  
 O pacote Microsoft.EntityFrameworkCore.Tools adiciona suporte a comandos do Entity Framework Core (EF Core) no .NET CLI e no Package Manager Console (PMC) do Visual Studio. Ele é essencial para gerenciar migrations, atualizar o banco de dados, gerar código a partir de um banco existente e outras tarefas automatizadas.
+
+### Aqui terminamos de instalar as dependencias necessárias.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Code First 
  
 - 53:49
