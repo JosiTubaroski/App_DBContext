@@ -324,6 +324,11 @@ Várias linguagens e frameworks adotam essa abordagem, principalmente aquelas qu
     - O relacionamento entre LivroModel e AutorModel indica que um livro possui um autor.
     - Provavelmente a classe AutorModel é definida em outro arquivo dentro do mesmo namespace (WebAPI8_Video.Models).
 
+### 📌 Criando a string de conexão - Arquivo appsenttings.json
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/25_App_Setings_Json.png"/>
+
+
 
 
  
