@@ -328,8 +328,67 @@ Várias linguagens e frameworks adotam essa abordagem, principalmente aquelas qu
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/25_App_Setings_Json.png"/>
 
+O código é um trecho de um arquivo de configuração appsettings.json usado em aplicações ASP.NET Core. Esse arquio contém configurações essenciais, como <b>nível de logging, strings de conexão com o banco de dados</b> e <b>configuração de hosts permitidos.</b> 
 
+Vamos detalhar cada parte:
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1️⃣Logging (Configuração de Logs)
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/26_Json_Login.png"/>
+
+- Essa seção define o <b>nivel de log</b> da aplicação.
+- Default: "Information" → Define o nível de log padrão para Information, ou seja, mensagens informativas serão registradas junto com mensagens de nível mais crítico (Warning, Error, Critical).
+- Microsoft.AspNetCore: "Warning" → Especialmente para logs do framework <b> ASP.NET Core,</b> apenas mensagens de <b>Warning</b> ou mais críticas serão registradas.
+
+✅ O que isso significa?
+
+- Erros graves sempre aparecerão no log.
+- Logs informativos da aplicação aparecerão.
+- O ASP.NET Core registrará apenas mensagens de alerta para evitar muitos logs desnecessários.
+
+2️⃣ConnectionStrings (String de Conexão com o Banco de Dados)
+
+"ConnectionStrings": {
+  "DefaultConnection": "server= JOSI1984\\SQLEXPRESS; database= WebApiAulaVideo; trusted_connection=true; trustservercertificate=true"
+}
+
+- "DefaultConnection" → Nome da string de conexão, usada para acessar o banco de dados.
+- "server=JOSI1984\\SQLEXPRESS" → O banco de dados está hospedado no servidor chamado JOSI1984, rodando no SQL Server Express.
+- "database=WebApiAulaVideo" → O banco de dados que será acessado é WebApiAulaVideo.
+- "trusted_connection=true" → Indica que a autenticação será feita via Windows Authentication (ou seja, sem necessidade de usuário e senha).
+- "trustservercertificate=true" → Indica que a conexão confiará no certificado do servidor, útil para evitar problemas com SSL em ambiente local.
+
+✅ O que isso significa?
+
+- A aplicação está configurada para se conectar a um banco de dados SQL Server local.
+- Como trusted_connection=true, não é necessário especificar usuário e senha, pois será usada a autenticação integrada do Windows.
+
+ 💡 Se fosse necessário autenticação com usuário e senha, a string de conexão ficaria assim:
+
+"DefaultConnection": "server=JOSI1984\\SQLEXPRESS; database=WebApiAulaVideo; user id=seu_usuario; password=sua_senha;"
+
+ 3️⃣AllowedHosts (Configuração de Hosts Permitidos)
+
+ "AllowedHosts": "*"
+
+- "*" → Significa que a aplicação pode aceitar requisições de qualquer host.
+- Se quisermos restringir a aplicação a domínios específicos, podemos definir assim:
+
+"AllowedHosts": "meusite.com, api.meusite.com"
+
+- Isso pode ser útil para segurança em produção, evitando que qualquer domínio acesse sua API.
+
+✅ O que isso significa?
+
+- Em ambiente de desenvolvimento, isso é útil, pois a aplicação pode ser acessada de qualquer lugar.
+- Em produção, recomenda-se definir hosts específicos para maior segurança.
+
+# Resumo Final
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/27_Tabela_Explicativa.png"/>
+
+Esse arquivo é essencial para configurar e gerenciar a aplicação ASP.NET Core de forma flexível. 
 
  
 - 53:49
