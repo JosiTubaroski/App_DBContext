@@ -396,9 +396,64 @@ Esse arquivo é essencial para configurar e gerenciar a aplicação ASP.NET Core
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/28_Program_cs.png"/>
 
+# Detalhamento
 
+Este código configura uma API no <b>ASP.NET Core</b> usando <b>Entity Framework Core, injeção de dependência e Swagger.</b>  
 
+# 1️⃣ Importação de Bibliotecas
 
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/29_Bibliotecas.png"/>
 
+Esses using importam namespaces essenciais:
+
+- Microsoft.EntityFrameworkCore → Para usar o Entity Framework Core, que facilita o acesso ao banco de dados.
+- WebAPI8_Video.Services.Autor → Importa serviços relacionados à entidade Autor, possivelmente implementando regras de negócio para manipular autores.
+
+# 2️⃣ Criando o Builder da Aplicação
+
+var builder = WebApplication.CreateBuilder(args);
+
+- WebApplication.CreateBuilder(args) → Inicia a configuração da aplicação.
+- builder → Objeto que permite configurar serviços e middlewares antes da aplicação rodar.
+
+# 3️⃣ Adicionando Serviços ao Contêiner de Dependências
+
+builder.Services.AddControllers();
+
+- Adiciona suporte a Controllers, que são responsáveis por gerenciar requisições HTTP.
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+- AddEndpointsApiExplorer() → Necessário para documentar Minimal APIs no Swagger.
+- AddSwaggerGen() → Habilita o Swagger, uma ferramenta que gera documentação interativa da API.
+
+ builder.Services.AddScoped<IAutorInterface, AutorService>();
+
+- AddScoped<IAutorInterface, AutorService>() →
+  - Registra a interface IAutorInterface e a associa à implementação AutorService.
+  - Scoped significa que cada requisição HTTP receberá uma nova instância de AutorService.
  
+ builder.Services.AddDbContext<AppDbContex>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+- AddDbContext<AppDbContex>() → Adiciona o contexto do banco de dados, permitindo interagir com ele usando o Entity Framework Core.
+
+# Resumo do Fluxo
+
+1️⃣ Configura serviços como Controllers, Swagger, Banco de Dados e Injeção de Dependência.
+2️⃣ Cria a aplicação com base nessas configurações.
+3️⃣ Define middlewares para segurança e documentação.
+4️⃣ Executa a API, pronta para receber requisições.
+
+# Conclusão
+
+Este código configura uma Web API em .NET 8 com:
+✅ Injeção de Dependência para serviços.
+✅ Entity Framework Core para acessar o banco de dados.
+✅ Swagger para documentar a API.
+✅ HTTPS e autorização para segurança.
+
 - 53:49
