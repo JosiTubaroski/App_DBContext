@@ -390,5 +390,15 @@ Vamos detalhar cada parte:
 
 Esse arquivo é essencial para configurar e gerenciar a aplicação ASP.NET Core de forma flexível. 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Após a criação da string de conexão vamos utiliza-la no Program.cs, que é o arquivo que inicia o projeto.
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/28_Program_cs.png"/>
+
+
+
+
+
  
 - 53:49
