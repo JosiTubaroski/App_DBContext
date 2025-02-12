@@ -443,20 +443,20 @@ builder.Services.AddSwaggerGen();
 
 # Resumo do Fluxo
 
--1️⃣ Configura serviços como Controllers, Swagger, Banco de Dados e Injeção de Dependência.
--2️⃣ Cria a aplicação com base nessas configurações.
--3️⃣ Define middlewares para segurança e documentação.
--4️⃣ Executa a API, pronta para receber requisições.
+1. Configura serviços como Controllers, Swagger, Banco de Dados e Injeção de Dependência.
+2. Cria a aplicação com base nessas configurações.
+3. Define middlewares para segurança e documentação.
+4. Executa a API, pronta para receber requisições.
 
 # Conclusão
 
 Este código configura uma Web API em .NET 8 com:
--✅ Injeção de Dependência para serviços.
--✅ Entity Framework Core para acessar o banco de dados.
--✅ Swagger para documentar a API.
--✅ HTTPS e autorização para segurança.
+- Injeção de Dependência para serviços.
+- Entity Framework Core para acessar o banco de dados.
+- Swagger para documentar a API.
+- HTTPS e autorização para segurança.
 
-# A string de conexão é criada no arquivo 'AppSetings.json' e chamada no 'Program.cs' que inicializa o sistema.
+### A string de conexão é criada no arquivo 'AppSetings.json' e chamada no 'Program.cs' que inicializa o sistema.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
