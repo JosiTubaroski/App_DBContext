@@ -485,6 +485,9 @@ Este código configura uma Web API em .NET 8 com:
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/33_Arquivo_Migracao.png"/>
 
+# Executar update database
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/34_Update_Base.png"/>
 
 
 - 53:49
