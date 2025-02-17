@@ -469,5 +469,8 @@ Este código configura uma Web API em .NET 8 com:
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/29_Console_Gerenciador_de_pacotes.png"/>
 
+# Criando as migrações
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/30_Migrations.png"/>
 
 - 53:49
