@@ -467,6 +467,7 @@ Este código configura uma Web API em .NET 8 com:
 
 # Agora vamos para o gerenciador de Pacotes
 
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/29_Console_Gerenciador_de_pacotes.png"/>
 
 
 - 53:49
