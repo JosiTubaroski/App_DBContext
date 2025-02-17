@@ -473,4 +473,13 @@ Este código configura uma Web API em .NET 8 com:
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/30_Migrations.png"/>
 
+# Começando a construção
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/31_Start_Migration.png"/>
+
+# Migração Concluida
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/32_Migracao_Concluida.png"/>
+
+
 - 53:49
