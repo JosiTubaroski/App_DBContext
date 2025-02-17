@@ -489,5 +489,7 @@ Este código configura uma Web API em .NET 8 com:
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/34_Update_Base.png"/>
 
+# Após o termino da execução, o banco de dados e as tabelas foram criados
 
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/35_Create_DataBase.png"/>
 - 53:49
