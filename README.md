@@ -481,5 +481,10 @@ Este código configura uma Web API em .NET 8 com:
 
 <img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/32_Migracao_Concluida.png"/>
 
+# Após a execução do comando é gerado o arquivo de migração
+
+<img src="https://github.com/JosiTubaroski/App_DBContext/blob/main/img/33_Arquivo_Migracao.png"/>
+
+
 
 - 53:49
